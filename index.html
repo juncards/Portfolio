@@ -1,72 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="navbar">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <h1>Hi, I'm [Your Name]</h1>
-            <p>A passionate [Your Profession] creating beautiful web experiences.</p>
-            <a href="#projects" class="btn">View My Work</a>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="container">
+      <h1>Hi, I'm [Your Name]</h1>
+      <p>I'm a [Your Profession]</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm passionate about [Your Passion]. With experience in [Your Expertise], I enjoy creating impactful solutions that make life easier.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">React</div>
+        <div class="skill">Node.js</div>
+        <!-- Add more skills as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-list">
+        <div class="project">
+          <h3>Project 1</h3>
+          <p>Description of Project 1.</p>
+          <a href="#" target="_blank">View Project</a>
         </div>
-    </header>
+        <div class="project">
+          <h3>Project 2</h3>
+          <p>Description of Project 2.</p>
+          <a href="#" target="_blank">View Project</a>
+        </div>
+        <!-- Add more projects as needed -->
+      </div>
+    </div>
+  </section>
 
-    <main>
-        <section id="about" class="section">
-            <h2>About Me</h2>
-            <p>I am a [Your Role] with a focus on [Your Expertise]. I enjoy tackling challenges and continuously learning to improve my craft.</p>
-        </section>
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-        <section id="projects" class="section">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Project 1</h3>
-                    <p>Description of the project.</p>
-                    <a href="#" target="_blank">View Project</a>
-                </div>
-                <div class="project-card">
-                    <h3>Project 2</h3>
-                    <p>Description of the project.</p>
-                    <a href="#" target="_blank">View Project</a>
-                </div>
-                <!-- Add more projects as needed -->
-            </div>
-        </section>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 [Your Name]. All Rights Reserved.</p>
+      <div class="social-links">
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+        <!-- Add other social media links -->
+      </div>
+    </div>
+  </footer>
 
-        <section id="contact" class="section">
-            <h2>Contact Me</h2>
-            <form id="contact-form">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
-    </footer>
-    
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
